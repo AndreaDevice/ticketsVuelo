@@ -1,0 +1,147 @@
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.75rem;
+    }
+
+    header {
+        font-size: 1rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-content p {
+        font-size: 0.8rem;
+    }
+
+    .flight-card {
+        padding: 0.6rem;
+    }
+
+    .flight-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .flight-card p {
+        font-size: 0.8rem;
+    }
+
+    .flight-card .price {
+        font-size: 0.9rem;
+    }
+
+    #login-section, #signup-section {
+        padding: 1.5rem 1rem;
+    }
+
+    #login-section h2, #signup-section h2 {
+        font-size: 1.3rem;
+    }
+
+    input, button {
+        font-size: 0.8rem;
+        padding: 0.7rem;
+    }
+
+    button {
+        padding: 0.7rem 1.3rem;
+    }
+
+    #login-section p, #signup-section p {
+        font-size: 0.8rem;
+    }
+
+    #login-section a, #signup-section a {
+        font-size: 0.8rem;
+    }
+
+    #flight-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #login-section p {
+        margin-top: 1rem;
+    }
+
+    /* Estilo de los botones de scroll */
+    .scroll-btn {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        background-color: #4b4ba8;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .scroll-btn:hover {
+        background-color: #6464b8;
+        transform: scale(1.1);
+    }
+
+    /* Botón de "Subir" desplazado un poco hacia arriba */
+    #scrollUp {
+        bottom: 70px; /* Desplazamos el botón de "Subir" un poco más arriba */
+    }
+
+    /* Iconos de las flechas */
+    .scroll-btn i {
+        font-size: 1.6rem; /* Tamaño adecuado para los iconos */
+    }
+
+    /* Estilos para cuando el botón es presionado */
+    .scroll-btn:active {
+        transform: scale(0.95);
+    }
+}
+
+/* Ajustes de footer en pantallas pequeñas */
+@media (max-width: 768px) {
+    footer {
+        padding: 1.5rem 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 0.3rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 1.5rem 1rem;
+        background-position: center top; /* Ajusta la posición de la imagen */
+        background-size: cover; /* Mantén el fondo ajustado */
+    }
+
+    footer p {
+        font-size: 0.8rem; /* Reduce el tamaño del texto */
+    }
+
+    .footer-links a {
+        font-size: 0.8rem; /* Tamaño más pequeño para los enlaces */
+        display: block; /* Enlaces en líneas separadas */
+        margin: 0.3rem 0; /* Espaciado entre ellos */
+    }
+}

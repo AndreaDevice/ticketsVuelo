@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "airline": "Aeromexico",
+        "origin": "Ciudad de México",
+        "destination": "Los Ángeles",
+        "price": 350,
+        "date": "2024-11-25",
+        "duration": "5h 30m",
+        "class": "Economy",
+        "aircraft": "Boeing 737"
+    },
+    {
+        "id": 2,
+        "airline": "American Airlines",
+        "origin": "New York",
+        "destination": "Miami",
+        "price": 220,
+        "date": "2024-11-30",
+        "duration": "3h 15m",
+        "class": "Economy",
+        "aircraft": "Airbus A320"
+    },
+    {
+        "id": 3,
+        "airline": "British Airways",
+        "origin": "London",
+        "destination": "Paris",
+        "price": 150,
+        "date": "2024-12-01",
+        "duration": "1h 15m",
+        "class": "Business",
+        "aircraft": "Boeing 777"
+    },
+    {
+        "id": 4,
+        "airline": "Air France",
+        "origin": "Paris",
+        "destination": "Tokyo",
+        "price": 1200,
+        "date": "2024-12-05",
+        "duration": "12h 30m",
+        "class": "First Class",
+        "aircraft": "Airbus A350"
+    },
+    {
+        "id": 5,
+        "airline": "Qatar Airways",
+        "origin": "Doha",
+        "destination": "Sydney",
+        "price": 800,
+        "date": "2024-12-10",
+        "duration": "14h 45m",
+        "class": "Business",
+        "aircraft": "Boeing 787"
+    },
+    {
+        "id": 6,
+        "airline": "Emirates",
+        "origin": "Dubai",
+        "destination": "New York",
+        "price": 950,
+        "date": "2024-12-15",
+        "duration": "14h 10m",
+        "class": "First Class",
+        "aircraft": "Airbus A380"
+    },
+    {
+        "id": 7,
+        "airline": "Lufthansa",
+        "origin": "Frankfurt",
+        "destination": "Madrid",
+        "price": 180,
+        "date": "2024-12-18",
+        "duration": "2h 30m",
+        "class": "Economy",
+        "aircraft": "Boeing 737"
+    },
+    {
+        "id": 8,
+        "airline": "Delta Airlines",
+        "origin": "Atlanta",
+        "destination": "Los Ángeles",
+        "price": 250,
+        "date": "2024-12-20",
+        "duration": "4h 45m",
+        "class": "Economy",
+        "aircraft": "Airbus A321"
+    },
+    {
+        "id": 9,
+        "airline": "Singapore Airlines",
+        "origin": "Singapore",
+        "destination": "Hong Kong",
+        "price": 450,
+        "date": "2024-12-23",
+        "duration": "4h 15m",
+        "class": "Business",
+        "aircraft": "Airbus A350"
+    },
+    {
+        "id": 10,
+        "airline": "Cathay Pacific",
+        "origin": "Hong Kong",
+        "destination": "Bangkok",
+        "price": 300,
+        "date": "2024-12-27",
+        "duration": "3h 50m",
+        "class": "Economy",
+        "aircraft": "Boeing 777"
+    },
+    {
+        "id": 11,
+        "airline": "KLM",
+        "origin": "Amsterdam",
+        "destination": "Barcelona",
+        "price": 220,
+        "date": "2024-12-30",
+        "duration": "2h 15m",
+        "class": "Economy",
+        "aircraft": "Airbus A320"
+    },
+    {
+        "id": 12,
+        "airline": "Jet Airways",
+        "origin": "Mumbai",
+        "destination": "Dubai",
+        "price": 150,
+        "date": "2024-12-28",
+        "duration": "3h 25m",
+        "class": "Economy",
+        "aircraft": "Airbus A321"
+    }
+]

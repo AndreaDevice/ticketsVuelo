@@ -1,0 +1,296 @@
+/* Estilo base para la página de usuario */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../imgs/pcb.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1; /* Detrás del contenido */
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+header h1 {
+    color: #ff66c4;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+#search-bar {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#search-input {
+    width: 80%;
+    padding: 0.8rem;
+    border: 2px solid #4b4ba8;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#available-flights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.flight-card {
+    background: #2d2d3e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.flight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.flight-card h3 {
+    color: #ff66c4;
+}
+
+.flight-card .price {
+    font-weight: bold;
+    color: #4b4ba8;
+}
+
+#map-section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#reserved-flights {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#reserved-flights h2 {
+    color: #ff66c4;
+    margin-bottom: 1rem;
+}
+
+#my-flights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.reserved-card {
+    background: #2d2d3e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.reserved-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.reserved-card h3 {
+    color: #ff66c4;
+}
+
+.reserved-card .price {
+    font-weight: bold;
+    color: #4b4ba8;
+}
+
+.reserved-card button {
+    margin-top: 1rem;
+    background: #ff6666;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.reserved-card button:hover {
+    background: #ff4c4c;
+}
+
+#cancelled-flights {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#cancelled-flights h2 {
+    color: #ff66c4;
+    margin-bottom: 1rem;
+}
+
+#cancelled-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.cancelled-card {
+    background: #2d2d3e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cancelled-card h3 {
+    color: #ff6666;
+}
+
+.cancelled-card .price {
+    font-weight: bold;
+    color: #4b4ba8;
+}
+
+/* Modal de pago */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #1e1e2f;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.modal-content input {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border: 2px solid #4b4ba8;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.modal-content button {
+    padding: 0.8rem 1.5rem;
+    background: #4b4ba8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background: #6464b8;
+}
+
+/* Botón de quejas/sugerencias */
+#feedback-button {
+    background: #4b4ba8;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#feedback-button:hover {
+    background: #6464b8;
+}
+
+/* Modal de quejas/sugerencias */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #1e1e2f;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content .close-feedback {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.modal-content textarea {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border: 2px solid #4b4ba8;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.modal-content button {
+    padding: 0.8rem 1.5rem;
+    background: #4b4ba8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background: #6464b8;
+}

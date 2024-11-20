@@ -1,0 +1,7 @@
+[
+    { "airline": "Airline A", "origin": "Nueva York", "destination": "Londres", "price": 700 },
+    { "airline": "Airline B", "origin": "Los Ángeles", "destination": "Tokio", "price": 1200 },
+    { "airline": "Airline C", "origin": "Madrid", "destination": "París", "price": 300 },
+    { "airline": "Airline D", "origin": "Berlín", "destination": "Roma", "price": 400 },
+    { "airline": "Airline E", "origin": "Sídney", "destination": "Auckland", "price": 500 }
+]

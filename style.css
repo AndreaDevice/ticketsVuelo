@@ -1,0 +1,343 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1e1e2f;
+    color: #e0e0e0;
+}
+
+header {
+    position: relative;
+    overflow: hidden; /* Para que el efecto no sobresalga del header */
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 2px solid #4b4ba8; /* Línea decorativa */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./imgs/pcb.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1; /* Detrás del contenido */
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+header:hover::before {
+    transform: scale(1.1); /* Efecto de ampliación */
+}
+
+.header-content {
+    position: relative;
+    background: rgba(30, 30, 47, 0.8); /* Fondo oscuro translúcido */
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+}
+
+header h1 {
+    color: #ff66c4; /* Color principal */
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    text-shadow: 0 0 5px #ff66c4, 0 0 10px rgba(255, 102, 196, 0.5); /* Sombra neón suave */
+}
+
+header p {
+    color: #e0e0e0; /* Texto secundario */
+    font-size: 1.2rem;
+    margin: 0;
+    text-shadow: 0 0 5px #4b4ba8, 0 0 10px rgba(75, 75, 168, 0.4); /* Azul neón sutil */
+}
+
+main {
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+    background: url('./imgs/tokyoNight.png') no-repeat center center; /* Imagen como fondo */
+    background-size: cover; /* La imagen ocupa todo el espacio */
+    color: #e0e0e0; /* Texto claro */
+    z-index: 0; /* Asegura que esté al fondo */
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 30, 47, 0.7); /* Superposición oscura */
+    z-index: -1; /* Detrás del contenido */
+}
+
+h1, h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: #e0e0e0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#flight-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.flight-card {
+    background: #2d2d3e; /* Fondo ligeramente contrastante */
+    border: 1px solid #3f3f58; /* Bordes sutiles */
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.flight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 10px #ff66c4; /* Brillo neón */
+    border-color: #ff66c4; /* Neón en el borde al pasar el mouse */
+}
+
+.flight-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff66c4; /* Resaltado sutil */
+}
+
+.flight-card p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #ccccd1;
+}
+
+.flight-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4b4ba8; /* Azul suave */
+    margin-top: 0.5rem;
+}
+
+/* Estilos para la sección de Login */
+#login-section p {
+    color: #e0e0e0;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Estilos para la sección de Login */
+#login-section, #signup-section {
+    background: rgba(30, 30, 47, 0.055); /* Fondo oscuro translúcido */
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#login-section h2, #signup-section h2 {
+    color: #ff66c4; /* Título en color neon */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Formularios */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    color: #e0e0e0;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #4b4ba8;
+    border-radius: 5px;
+    background: #2d2d3e;
+    color: #e0e0e0;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #ff66c4; /* Resalta el borde en rojo neón al enfocar */
+}
+
+button {
+    background: #4b4ba8;
+    color: #e0e0e0;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #6464b8; /* Azul más claro */
+    transform: translateY(-3px);
+}
+
+/* Estilo para el enlace de crear cuenta */
+#login-section p, #signup-section p {
+    color: #e0e0e0;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+#login-section a, #signup-section a {
+    color: #ff66c4; /* Color de neón */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#login-section a:hover, #signup-section a:hover {
+    color: #ff99cc; /* Color más suave al pasar el ratón */
+}
+
+/* Estilo para los botones de desplazamiento en pantallas grandes */
+.scroll-btn {
+    position: fixed;
+    right: 15px;
+    background-color: #4b4ba8;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Botón de "Bajar" */
+#scrollDown {
+    bottom: 10px; /* Aumentar separación del borde inferior */
+}
+
+.scroll-btn:hover {
+    background-color: #6464b8;
+    transform: scale(1.1);
+}
+
+/* Botón de "Subir" desplazado un poco hacia arriba */
+#scrollUp {
+    bottom: 80px; /* Se ajusta para no superponerse al botón de bajar */
+}
+
+/* Iconos de las flechas */
+.scroll-btn i {
+    font-size: 1.6rem; /* Tamaño adecuado para los iconos */
+}
+
+/* Estilos para cuando el botón es presionado */
+.scroll-btn:active {
+    transform: scale(0.95);
+}
+
+/* Estilo para el footer con fondo */
+footer {
+    background: url('./imgs/AirPortNewYork.png') no-repeat center center; /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el footer */
+    color: #e0e0e0; /* Texto claro */
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 2px solid #13137a; /* Línea decorativa */
+    margin-top: 2rem;
+    position: relative; /* Para superposición */
+}
+
+/* Superposición oscura para mejorar legibilidad */
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 30, 47, 0.85); /* Fondo oscuro translúcido */
+    z-index: -1; /* Detrás del contenido */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: #ff66c4; /* Resaltado en rosa */
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #6464b8; /* Azul más claro al pasar el cursor */
+}
+
+/* Destacar palabras clave */
+.highlight {
+    color: #ff66c4; /* Resaltado en rosa */
+    font-weight: bold;
+}
+
+/* Cyberpunk Scrollbar Style */
+::-webkit-scrollbar {
+    width: 14px;
+    background: linear-gradient(180deg, #0f0c29, #302b63, #24243e); /* Fondo dinámico */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1e1e2f;
+    box-shadow: 0 0 10px #ff66c4, 0 0 20px #ff66c4; /* Efecto brillante */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ff66c4, #34e89e); /* Degradado cyberpunk */
+    border-radius: 14px;
+    border: 2px solid #1e1e2f; /* Bordes oscuros para contraste */
+    box-shadow: 0 0 10px #34e89e, 0 0 20px #ff66c4; /* Glow futurista */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #ff66c4, #f9d423); /* Cambios vibrantes al hover */
+    box-shadow: 0 0 15px #f9d423, 0 0 30px #ff66c4;
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #302b63; /* Fondo más brillante al interactuar */
+    box-shadow: 0 0 15px #ff66c4;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
